@@ -1,4 +1,4 @@
-# Meu Tema WordPress
+# Boilerplate Theme Wordpress
 
 ![Logo do projeto](https://i.imgur.com/9YOiKWi.jpg)
 
@@ -35,6 +35,12 @@ Exemplos de código:
 ## Contribuição
 
 Sinta-se à vontade para contribuir com melhorias, correções de bugs ou novos recursos. Abra uma issue ou envie um pull request!
+
+## 👷 Autores
+
+Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início, colaboradores.
+
+* **lucas Martins** - *Função realizada* - [nome_do_dev](https://github.com/link_do_Perfil)
 
 ## 📄 Licença
 
