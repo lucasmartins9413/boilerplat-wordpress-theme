@@ -1,0 +1,54 @@
+<?= get_header(); ?>
+
+<?php
+$title = get_the_title();
+?>
+
+<main class="category_single">
+    <div class="title_post">
+        <div class="container">
+            <h1><?= single_cat_title(); ?></h1>
+        </div>
+    </div>   
+
+    <div class="container">
+        <div class="category_content">
+            
+            <div class="category_posts">
+
+            <?php if(have_posts()): ?>
+            <?php while(have_posts()): ?>
+            <?php the_post(); ?>
+
+                <div class="card_post-single">
+                    <figure>
+                    <?php if(has_post_thumbnail()): ?>
+                        <a href="<?= the_permalink(); ?>" aria-label="<?= get_the_title(); ?>">
+                        <?= 
+                            the_post_thumbnail('large', array('class'=>'post_thumb', "alt" => $title, "aria-label" => $title));
+                        ?>
+                        </a>
+                    <?php endif ?>  
+                    </figure>
+                    <div class="card_post-text">
+                        <?= the_category();?>
+                        <a href="<?php the_permalink(); ?>" aria-label="<?= get_the_title(); ?>"><h4><?= wp_trim_words(get_the_title(), 8, '...'); ?></h4></a>
+                        <p class="excerpt tbody16"><?= wp_trim_words(get_the_excerpt(), 20, '...');?></p>
+                        <p class="time-read tbody12">10 min leitura</p>
+                    </div>
+                </div>
+
+
+            <?php endwhile; ?>
+            <?php endif; ?>
+
+
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+
+<?= get_footer();?>
