@@ -1,6 +1,6 @@
 # Meu Tema WordPress
 
-[Imgur](https://i.imgur.com/9YOiKWi.jpg)
+![Logo do projeto](https://i.imgur.com/9YOiKWi.jpg)
 
 ## Descrição
 
