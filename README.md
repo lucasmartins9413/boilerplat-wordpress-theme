@@ -1,6 +1,6 @@
 # Meu Tema WordPress
 
-![Captura de Tela](https://i.imgur.com/seu-codigo-da-imagem.jpg)
+![Captura de Tela](https://imgur.com/a/AP1iklr)
 
 ## Descrição
 
