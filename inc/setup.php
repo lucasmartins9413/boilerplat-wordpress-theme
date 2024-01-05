@@ -1,12 +1,6 @@
 <?php
 function bp_theme_styles(){
-  //css
   wp_enqueue_style("app", get_template_directory_uri().'/assets/minify/css/app.min.css');
-  wp_enqueue_style("slick-css", get_template_directory_uri().'/assets/css/slick.css');
-  wp_enqueue_style("slick-main-css", get_template_directory_uri().'/assets/css/slick-edit.css');
-  
-  wp_enqueue_script("slick-js", get_template_directory_uri().'/assets/js/slick.min.js', array('jquery'), '', true);
-  wp_enqueue_script("slick-scripts", get_template_directory_uri().'/assets/js/slick.js', array('jquery', 'slick-js'), '', true);
   wp_enqueue_script("main-js", get_template_directory_uri().'/assets/minify/js/main.min.js', array('jquery'), '', true);
 }
 

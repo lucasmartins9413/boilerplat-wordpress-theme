@@ -22,6 +22,10 @@
                         <a href="<?= the_permalink(); ?>">
                         <?= the_post_thumbnail('large', array('class'=>'post_thumb'));?>
                         </a>
+                        <?php else: ?>
+                    <a href="<?= the_permalink(); ?>" aria-label="<?= get_the_title(); ?>">
+                        <img width="100%" src="<?= get_template_directory_uri()?>/assets/images/placeholder.jpg" alt="<?= get_the_title(); ?>" class="post_thumb_placeholder" />
+                    </a>
                     <?php endif ?>  
                     </figure>
                     <div class="card_post-text">
